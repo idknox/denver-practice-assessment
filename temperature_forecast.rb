@@ -49,3 +49,7 @@ forecast = [
     }
   }
 ]
+forecast.each do |day|
+  puts day["day"].capitalize
+  puts "High:" + day["temperatures"]["high"].to_s + ", Low:" + day["temperatures"]["low"].to_s
+end
