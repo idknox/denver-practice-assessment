@@ -2,10 +2,6 @@ numbers = [20, 33, 54, 21, 87, 32, 99, 10]
 
 puts numbers.length
 
-puts numbers.sort[-1]
+puts numbers.max
 
-sum = 0
-
-numbers.each {|num| sum += num }
-
-puts sum
+puts numbers.reduce(:+)
